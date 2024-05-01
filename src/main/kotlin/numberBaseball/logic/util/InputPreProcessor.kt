@@ -1,18 +1,20 @@
 package numberBaseball.logic.util
 
-fun stringToIntArray(inputString:String, gameSize: Int): MutableList<Int> {
-    val inputNumber: MutableList<Int> = ArrayList()
+fun String.convertToIntList(gameSize: Int) : MutableList<Int> {
+    val inputNumber : MutableList<Int> = ArrayList()
     for(i in 0 until gameSize){
+        if(this.length!=gameSize){
+            throw IllegalArgumentException("Please enter a $gameSize - digit number")
+        }
         try{
-            var number = inputString.substring(i, i + 1).toInt()
+            var number = this.substring(i, i + 1).toInt()
             require(!inputNumber.contains(number))
             inputNumber.add(number)
-        } catch (e : IllegalArgumentException){
-            println("Please enter a valid numeric order.")
-        } catch (e : NumberFormatException){
-            println("Please enter numbers not duplicated.")
+        } catch (e : Exception){
+            throw IllegalArgumentException("Please enter a valid numeric order.")
         }
     }
     return inputNumber
 }
+
 
