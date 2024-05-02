@@ -8,6 +8,6 @@ fun main(args: Array<String>) {
         numberProcessor = NumberProcessor(),
         randomNumberGenerator = RandomNumberGenerator()
     )
-    numberBaseballController.start()
+    numberBaseballController.go()
 
 }
