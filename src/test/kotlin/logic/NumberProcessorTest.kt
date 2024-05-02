@@ -1,7 +1,6 @@
 package logic
 
-import numberBaseball.logic.NumberProcessor
-import numberBaseball.logic.util.RandomNumberGenerator
+import numberBaseball.logic.numberProcessor.NumberProcessor
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
