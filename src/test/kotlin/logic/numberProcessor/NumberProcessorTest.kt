@@ -1,5 +1,6 @@
 package logic.numberProcessor
 
+import numberBaseball.data.GameRecord
 import numberBaseball.logic.numberProcessor.NumberProcessor
 import numberBaseball.logic.numberProcessor.ResultTransferObject
 import org.junit.jupiter.api.DisplayName
@@ -13,7 +14,7 @@ class NumberProcessorTest {
     @Test
     fun numberProcessorTest(){
         // Arrange
-        val sut = NumberProcessor()
+        val sut = NumberProcessor(gameRecord = GameRecord())
         val controlledRandomNumber = mutableListOf<Int>(1, 2, 3)
         val inputExpected3strike = mutableListOf<Int>(1, 2, 3)
         val resultExpected3strike = ResultTransferObject(3,0)

@@ -1,6 +1,8 @@
 package numberBaseball.logic.numberProcessor
 
-class NumberProcessor() {
+import numberBaseball.data.GameRecord
+
+class NumberProcessor(val gameRecord: GameRecord) {
 
     fun processGameNumber(intList: MutableList<Int>, randomNumbers: List<Int>): ResultTransferObject {
         var strike: Int = 0
@@ -14,7 +16,7 @@ class NumberProcessor() {
                 ball++
             }
         }
+        gameRecord.addGameCount()
         return ResultTransferObject(strike, ball)
-
     }
 }
