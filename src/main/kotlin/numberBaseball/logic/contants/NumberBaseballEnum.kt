@@ -7,7 +7,7 @@ class NumberBaseballEnum {
     }
 
     enum class RandomNumber(val number: Int) {
-        RANDOMNUMBERFROM(1),
+        RANDOMNUMBERFROM(0),
         RANDOMNUMBERUNTIL(10)
     }
 }
