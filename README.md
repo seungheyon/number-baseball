@@ -33,3 +33,26 @@
 ![image](https://github.com/seungheyon/number-baseball/assets/71931476/e190f68d-4ae5-4d96-968a-85a7d409ca73)
 
 #### Controller 는 GamePlaymanagement 를 의존하고, GamePlaymanagement 는 NumberProcessor 를 의존합니다. NumberProcessor 는 GameRecord 를 통해 게임 로그를 기록하고, Controller 는 필요할 경우 기록된 데이터를 출력합니다.
+
+
+실행 화면
+---------
+#### 어플리케이션을 시작하면 아래와 같이 안내 문구가 출력되고, 메뉴가 표시됩니다.
+#### 1번을 입력하면 숫자야구가 시작됩니다.
+
+![image](https://github.com/seungheyon/number-baseball/assets/71931476/bd6dae8f-4c63-4bef-b6a8-11699eafcf78)
+
+#### 게임을 완료할 때까지 루프를 돌면서 정답 여부를 확인하고, 
+
+![image](https://github.com/seungheyon/number-baseball/assets/71931476/6e704ee9-5d3f-4a87-a0fd-5c7c34698598)
+
+#### 정답을 맞출 경우 숫자야구를 종료하며 다시 안내 화면으로 돌아옵니다.
+
+![image](https://github.com/seungheyon/number-baseball/assets/71931476/52305a80-a947-4306-9018-3eb98ac6c3fc)
+
+
+#### 잘못된 입력에 대해서는 오류 문구를 출력하고 다시 입력받도록 합니다.
+
+![image](https://github.com/seungheyon/number-baseball/assets/71931476/6187be5b-c7e7-4d08-a414-405fbe2206be)
+
+
